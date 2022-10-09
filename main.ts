@@ -227,7 +227,7 @@ namespace KAGA_IoT {
         serial.writeString("\n");
     }
     //% blockId=PUB_MQTT 
-    //%block="トピックを指定　%String PUBLISH DATA%number"
+    //%block="TOPIC　%String PUBLISH DATA%number"
     export function PubMqtt(topic: string, data: number) {
         serial.writeString("PUB ");
         serial.writeString(topic);
@@ -236,7 +236,7 @@ namespace KAGA_IoT {
         serial.writeString("\n");
     }
     //% blockId=SUB_MQTT 
-    //%block="トピックを指定　Subscribe FROM%String"
+    //%block="Subscribe FROM%String"
     export function SubMqtt(topic: string) {
         serial.writeString("SUB ");
         serial.writeString(topic);
