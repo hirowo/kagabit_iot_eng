@@ -236,7 +236,7 @@ namespace KAGA_IoT {
         serial.writeString("\n");
     }
     //% blockId=SUB_MQTT 
-    //%block="Subscribe FROM TOPIC%String"
+    //%block="Subscribe FROM TOPIC %String"
     export function SubMqtt(topic: string) {
         serial.writeString("SUB ");
         serial.writeString(topic);
